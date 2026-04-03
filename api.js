@@ -8,7 +8,7 @@ const btn = document.getElementById("load");
 btn.addEventListener("click", async () => { 
     
     // 4. Request the user list from the external server (API)
-    const res = await fetch("https://typicode.com"); 
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
     
     // 5. Convert the raw server response into a readable JavaScript array
     const data = await res.json(); 
